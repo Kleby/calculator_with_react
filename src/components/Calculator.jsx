@@ -75,7 +75,7 @@ function operation(current, op, previous){
         setPreviousInput(operation(currentInput, operationInput, previousInput));
       }
       (showHistory === '0')? setShowHistory(currentInput)
-      :setShowHistory(`${showHistory} ${operationInput} ${currentInput} `) ;
+      :setShowHistory(`(${showHistory} ${operationInput} ${currentInput} )`) ;
       setCurrentInput(0);
     }   
 
@@ -91,7 +91,7 @@ function operation(current, op, previous){
   useEffect(() => {
     const timer = setTimeout(() => {
       handleClear();
-    }, 5000);
+    }, 8000);
     return () => {
       clearTimeout(timer);
     };
@@ -102,11 +102,11 @@ function operation(current, op, previous){
       <ContentInput>
         <Input  inputStyle='inputCurrent' 
         child={!resultDisplay ? 
-          currentInput
+           currentInput
           : 
             currentInput
         }    
-        />
+        /> 
         <ShowDisplay>
             {showHistory}
         </ShowDisplay>

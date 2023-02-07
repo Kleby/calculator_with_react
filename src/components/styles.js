@@ -16,8 +16,7 @@ export const ContentWrapper = styled.div `
    border-radius: 4em;
    
    background-color: #37374f;
-   border: .5rem outset #878a8f;
-   box-shadow: inset 0px 0px 4px #474a4f ;
+   box-shadow: inset 0.25em 0.25em 0.375em #878a8f ;
    
    user-select: none;
    
@@ -28,7 +27,6 @@ export const ContentWrapper = styled.div `
 
 export const ContentInput = styled.div `
    width: 80%;
-   border: 0.5rem ridge #878a8f;
    margin-bottom: 2rem;
 
    @media(${Devices.tablet}){
@@ -58,9 +56,7 @@ export const ZeroWrapper = styled.button `
    background-color: #333;
    color: #fff;
    border-radius: 2rem;
-   border: 0;
    font-size: 1.3rem;
-   border: 0.025rem groove #cdcdcd;
     &:hover{
       cursor: pointer;
       border-color: #779;
@@ -141,8 +137,3 @@ export const Mark = styled.a`
    color: #ff5;
    text-decoration: none;
 `;
-
-//** Media querys **
-//mm = mobile M
-//ml = mobile L
-

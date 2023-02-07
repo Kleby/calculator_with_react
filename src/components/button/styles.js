@@ -11,7 +11,6 @@ export const ButtonWrapper = styled.button `
    font-size: 1.3rem;
 
    padding: 2rem ;
-   border: 0.025rem groove #cdcdcd;
    border-radius: 50%;
    outline: none;
    color: #fff;
